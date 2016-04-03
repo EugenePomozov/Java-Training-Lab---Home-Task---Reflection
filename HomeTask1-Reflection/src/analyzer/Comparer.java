@@ -7,7 +7,7 @@ import annotation.Equal;
 
 public class Comparer {
 
-	public boolean equalObjects(Object obj1,Object obj2) {
+	private boolean equalObjects(Object obj1,Object obj2) {
 		
 		Field[] fields1=obj1.getClass().getDeclaredFields();
 		Field[] fields2=obj2.getClass().getDeclaredFields();
