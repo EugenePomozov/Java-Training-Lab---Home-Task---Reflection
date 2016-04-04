@@ -1,5 +1,5 @@
 
-public class Rynner {
+public class Runner {
 
 	public static void main(String[] args) {
 		WordsFrequency wf = new WordsFrequency("To be or not to be. That is the question. dfg! dfdg dfg dfg gdf gdf dfg? rt re rt");
