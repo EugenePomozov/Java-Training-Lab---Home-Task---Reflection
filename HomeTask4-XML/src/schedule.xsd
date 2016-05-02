@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<air:schema xmlns:air="http://www.w3.org/2001/XMLSchema">
+ 
+ 
+ 
+    <air:element name="flight-schedule">
+          <air:complexType>
+            <air:sequence>
+                <air:element name="schedule" type="Schedule" maxOccurs="unbounded"/>
+            </air:sequence>
+        </air:complexType>
+    </air:element>
+    
+    
+    <air:complexType name="Schedule">
+        <air:sequence>
+            <air:element name="airline" type="air:string"/>
+            <air:element name="aircraft" type="Aircraft"/>
+            <air:element name="date-origin" type="air:date"/>
+            <air:element name="date-destination" type="air:date"/>
+            <air:element name="class" type="Class"/>
+            <air:element name="cost" type="air:double"/>
+        </air:sequence>
+    </air:complexType>
+    
+    
+    <air:simpleType name="Class">
+        <air:restriction base="air:string">
+            <air:enumeration value="econom"/>
+            <air:enumeration value="business"/>
+        </air:restriction>
+    </air:simpleType>
+    
+    
+    <air:complexType name="Aircraft">
+        <air:attribute name="number" type="air:string" use="required"/>
+        <air:attribute name="type" type="air:string" use="required"/>
+        <air:attribute name="capacity" type="air:integer" use="required"/>
+    </air:complexType>
+    
+    
+</air:schema>

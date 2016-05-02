@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flight-schedule xmlns:air="http://www.w3.org/2001/XMLSchema-instance"
+                 air:noNamespaceSchemaLocation="schedule.xsd">
+    <schedule>
+        <airline>Belavia</airline>
+        <aircraft number="B2-739" type="Boeing 737" capacity="853"/>
+        <date-origin>2016-05-01</date-origin>
+        <date-destination>2016-05-01</date-destination>
+        <class>business</class>
+        <cost>600</cost>
+    </schedule>
+    
+    <schedule>
+        <airline>Belavia</airline>
+        <aircraft number="ML-439" type="Embraer E190" capacity="114"/>
+        <date-origin>2016-05-02</date-origin>
+        <date-destination>2016-05-02</date-destination>
+        <class>business</class>
+        <cost>500</cost>
+    </schedule>
+    
+    <schedule>
+        <airline>Air China</airline>
+        <aircraft number="KS-8235" type="Embraer 175" capacity="192"/>
+        <date-origin>2016-05-03</date-origin>
+        <date-destination>2016-05-03</date-destination>
+        <class>business</class>
+        <cost>400</cost>
+    </schedule>
+    
+    <schedule>
+        <airline>Air China</airline>
+        <aircraft number="FT-2658" type="Boeing 747" capacity="539"/>
+        <date-origin>2016-05-04</date-origin>
+        <date-destination>2016-05-04</date-destination>
+        <class>econom</class>
+        <cost>321</cost>
+    </schedule>
+    
+    <schedule>
+        <airline>Air China</airline>
+        <aircraft number="KS-8235" type="Embraer 175" capacity="192"/>
+        <date-origin>2016-05-03</date-origin>
+        <date-destination>2016-05-03</date-destination>
+        <class>business</class>
+        <cost>400</cost>
+    </schedule>
+    
+</flight-schedule>
